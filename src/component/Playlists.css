@@ -1,0 +1,20 @@
+.playlists{
+    border: 1px solid black;
+}
+
+.playlists__title{
+    border: 1px solid black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.playlists__links{
+    background-color: black;
+}
+
+.playlists__link{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    margin-top: 2px;
+}

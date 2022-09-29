@@ -1,0 +1,14 @@
+.videolink{
+    padding: 1rem 1.5rem;
+    
+}
+.videolink__button{
+    margin-left: 3rem;
+    background-color: black;
+    padding: 5px 9px;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+}
