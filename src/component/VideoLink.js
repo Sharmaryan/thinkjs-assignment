@@ -21,9 +21,16 @@ export const VideoLink = () => {
   return (
     <div className="videolink">
       <input value={link} onChange={inputHandler} />
-      <button className="videolink__button" onClick={addVideoHandler}>
-        add video link
-      </button>
+
+      {link.length > 0  ? (
+        <button className="videolink__button" onClick={addVideoHandler}>
+          add video
+        </button>
+      ) : (
+        <button className="videolink__button videolink__button--disable">
+          add video
+        </button>
+      )}
     </div>
   );
 };

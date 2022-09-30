@@ -12,3 +12,8 @@
     border: none;
     cursor: pointer;
 }
+
+.videolink__button--disable{
+    background-color: gray;
+    cursor: revert;
+}
