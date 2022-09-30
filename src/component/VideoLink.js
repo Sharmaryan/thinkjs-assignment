@@ -6,6 +6,7 @@ import { v4 as uuid } from "uuid";
 
 export const VideoLink = () => {
   const [link, setLink] = useState("");
+  const [alert, setAlert] = useState(false);
 
   const dispatch = useDispatch();
 
@@ -19,6 +20,12 @@ export const VideoLink = () => {
     ) {
       dispatch(addVideoLink({ link, id: uuid() }));
       setLink("");
+      setAlert(false);
+    } else {
+      setAlert(true);
+      setTimeout(() => {
+        setAlert(false);
+      }, 2000);
     }
   };
 
@@ -29,7 +36,11 @@ export const VideoLink = () => {
   return (
     <div className="videolink">
       <input value={link} onChange={inputHandler} />
-
+      {alert && (
+        <div className="alert alert-danger">
+          <p>Enter a valid youtube URL</p>
+        </div>
+      )}
       {link.length > 0 ? (
         <button className="videolink__button" onClick={addVideoHandler}>
           add video

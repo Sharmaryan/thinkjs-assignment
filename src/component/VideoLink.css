@@ -1,19 +1,25 @@
-.videolink{
-    padding: 1rem 1.5rem;
-    
+.videolink {
+  padding: 1rem 1.5rem;
 }
-.videolink__button{
-    margin-left: 3rem;
-    background-color: black;
-    padding: 5px 9px;
-    color: white;
-    font-weight: bold;
-    text-transform: capitalize;
-    border: none;
-    cursor: pointer;
+.videolink__button {
+  margin-left: 3rem;
+  background-color: black;
+  padding: 5px 9px;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  border: none;
+  cursor: pointer;
 }
 
-.videolink__button--disable{
-    background-color: gray;
-    cursor: revert;
+.videolink__button--disable {
+  background-color: gray;
+  cursor: revert;
+}
+
+.alert {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
 }
