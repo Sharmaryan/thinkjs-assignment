@@ -10,8 +10,16 @@ export const VideoLink = () => {
   const dispatch = useDispatch();
 
   const addVideoHandler = () => {
-    dispatch(addVideoLink({ link, id: uuid() }));
-    setLink("");
+    var parser = document.createElement("a");
+    parser.href = link;
+    if (
+      parser.hostname === "www.youtube.com" &&
+      parser.protocol === "https:" &&
+      parser.pathname === "/watch"
+    ) {
+      dispatch(addVideoLink({ link, id: uuid() }));
+      setLink("");
+    }
   };
 
   const inputHandler = (e) => {
@@ -22,7 +30,7 @@ export const VideoLink = () => {
     <div className="videolink">
       <input value={link} onChange={inputHandler} />
 
-      {link.length > 0  ? (
+      {link.length > 0 ? (
         <button className="videolink__button" onClick={addVideoHandler}>
           add video
         </button>
@@ -34,3 +42,8 @@ export const VideoLink = () => {
     </div>
   );
 };
+
+// https://www.youtube.com/watch?v=1O0yazhqaxs
+// https://www.youtube.com/watch?v=PCicKydX5GE
+// https://www.youtube.com/watch?v=JXAVxbfsv0Q
+// https://www.youtube.com/watch?v=78qwtRI7gDA

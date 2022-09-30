@@ -4,7 +4,7 @@ import "./Playlists.css";
 
 export const Playlists = () => {
   const videoLists = useSelector((state) => state.videos.videoLinks);
-  console.log(videoLists)
+
   return (
     <div className="playlists">
       <p className="playlists__title">playlists</p>

@@ -44,19 +44,4 @@ export const Video = () => {
 // iQTZTioSeKA
 // i9ozuTlKqNo;
 
-// const checkElapsedTime = (e) => {
-//   const duration = e.target.getDuration();
-//   const currentTime = e.target.getCurrentTime();
-
-//   // console.log("without parse", duration, currentTime);
-
-//   const parsedDuration = parseInt(duration);
-//   const parsedCurrentTime = parseInt(currentTime);
-//   // console.log("parsed values", parsedDuration, parsedCurrentTime);
-
-//   if (parsedDuration === parsedCurrentTime)
-//     console.log("true", "when time is equal");
-
-//   if (parsedDuration - 1 === parsedCurrentTime)
-//     console.log("true", "when current time is bigger");
-// };
+// https://www.youtube.com/watch?v=g6fnFALEseI

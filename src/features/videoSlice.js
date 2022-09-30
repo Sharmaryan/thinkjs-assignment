@@ -9,7 +9,6 @@ const videoSlice = createSlice({
   initialState,
   reducers: {
     addVideoLink: (state, action) => {
-      console.log(action.payload)
       state.videoLinks.push(action.payload);
     },
     deleteVideoLink:(state, action) => {
