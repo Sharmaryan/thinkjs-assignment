@@ -33,15 +33,8 @@ export const Video = () => {
         url={`https://www.youtube.com/embed/${extractVideoId()}`}
         ref={videoRef}
         onEnded={videoHandler}
+        playing={true}
       />
     </div>
   );
 };
-
-// https://www.youtube.com/embed/tgbNymZ7vqY
-// lTTajzrSkCw
-// rUWxSEwctFU
-// iQTZTioSeKA
-// i9ozuTlKqNo;
-
-// https://www.youtube.com/watch?v=g6fnFALEseI

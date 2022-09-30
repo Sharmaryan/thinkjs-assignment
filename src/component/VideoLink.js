@@ -54,7 +54,4 @@ export const VideoLink = () => {
   );
 };
 
-// https://www.youtube.com/watch?v=1O0yazhqaxs
-// https://www.youtube.com/watch?v=PCicKydX5GE
-// https://www.youtube.com/watch?v=JXAVxbfsv0Q
-// https://www.youtube.com/watch?v=78qwtRI7gDA
+
