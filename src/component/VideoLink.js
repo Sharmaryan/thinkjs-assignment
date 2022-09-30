@@ -38,7 +38,7 @@ export const VideoLink = () => {
       <input value={link} onChange={inputHandler} />
       {alert && (
         <div className="alert alert-danger">
-          <p>Enter a valid youtube URL</p>
+          <p>Enter a valid youtube video link</p>
         </div>
       )}
       {link.length > 0 ? (

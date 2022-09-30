@@ -26,15 +26,21 @@ export const Video = () => {
       dispatch(deleteVideoLink(videoLists[0].id));
     }
   }
-  console.log(`https://www.youtube.com/embed/${extractVideoId()}`);
+
   return (
     <div className="video">
-      <ReactPlayer
-        url={`https://www.youtube.com/embed/${extractVideoId()}`}
-        ref={videoRef}
-        onEnded={videoHandler}
-        playing={true}
-      />
+      {videoLists.length > 0 ? (
+        <ReactPlayer
+          url={`https://www.youtube.com/embed/${extractVideoId()}`}
+          ref={videoRef}
+          onEnded={videoHandler}
+          playing={true}
+        />
+      ) : (
+        <h1 className="video__heading">
+          add a youtube video link to get started
+        </h1>
+      )}
     </div>
   );
 };
